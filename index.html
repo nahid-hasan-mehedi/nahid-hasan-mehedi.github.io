@@ -137,53 +137,59 @@
         color: #007bff;
         }
     </style>
-    <div class="contact-section">
-        <h2 class="text-center font-weight-bold">Contact Me</h2>
-        <p Style="text-align:center;"> 
-            "Hi there,If you have any queray!Please leave a message i will reply for sure.You can also E-mail me or use other social media to cantac"
-        </p>
-        <form >
-            <div class="form-group d-flex align-items-left justify-content-start">
-                <label for="name" class="mr-3">Name:</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="form-group d-flex align-items-left justify-content-start">
-                <label for="email" class="mr-3">Email:</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <div class="form-group d-flex align-items-left justify-content-start">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
-    </div>
-    <div class="social-links d-flex justify-content-center mt-3">
-        <div class="fontAwesome">
-            <a href="https://www.facebook.com/vjnahid.hasan/" class="fa fa-facebook mx-3"></a>
-            <a href="#" class="fa fa-linkedin mx-3"></a>
-            <a href="#" class="fa fa-github mx-3"></a>
+
+
+<div class="contact-section">
+    <h2 class="text-center font-weight-bold">Contact Me</h2>
+    <p Style="text-align:center;"> 
+        "Hi there, if you have any queries please leave a message and I will reply for sure! You can also email me or use my other social media contacts."
+    </p>
+    <form action="https://formspree.io/f/myyadzyl" method="POST">
+        <div class="form-group d-flex align-items-left justify-content-start">
+            <label for="name" class="mr-3">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
         </div>
-    </div>
-    </div>
-    </div>
-    <script>
-        // Add event listener to submit button
-        const submitBtn = document.querySelector("button[type='submit']");
-        submitBtn.addEventListener("click", function(event) {
-          event.preventDefault();
-          alert("Your message has been sent!");
-        });
-        
-          
-    </script>
+        <div class="form-group d-flex align-items-left justify-content-start">
+            <label for="email" class="mr-3">Email:</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group d-flex align-items-left justify-content-start">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+  </div>
+  
 
 
-    <div Style="text-align:center;" id="footer">&copy;
-        Mehedi Hasan Nahid 2023-2024. All Rights Reserved.
-    </div>
+
+<style>
+    .fab.fa-linkedin {
+  color: rgb(104, 104, 113);
+}
+.fab.fa-github {
+  color: rgb(83, 87, 83);
+
+}
+</style>
+<style>
+    a .label {
+  color: #373535; /* Replace with the desired color code */
+}
+
+</style>
+<div style="text-align: center;">
+    <ul>
+      <a href="https://www.linkedin.com/in/mehedi-hasan-nahid-40a553139/" class=""><i class="fab fa-linkedin"></i><span class="label">Linkdin</span></a>
+      <a href="https://github.com/nahid-hasan-mehedi" class=""><i class="fab fa-github"></i><span class="label">Github</span></a>
+    </ul>
+    <div style="text-align:center;" id="footer">&copy; Mehedi Hasan Nahid 2023-2024. All Rights Reserved.</div>
+  </div>
+  
+  
     </body>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
