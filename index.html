@@ -55,17 +55,55 @@
             text-align: middle;
             }
         </style>
-        <body>
-            <div class="top-panel d-flex">
-                <img src="me.jpg" alt="Mehedi Hasan Nahid" class="rounded-circle">
-                <div class="ml-3">
-                    <h1 class="ml-3">Hi I'm Mehedi Hasan Nahid</h1>
-                    <h5 class="ml-3">
-                        I'm a Software Developer and script writer, currently studying at Memorial University of Newfoundland, Canada.
-                    </h5>
-                </div>
-            </div>
-    </body>
+
+
+<body>
+    <div class="top-panel d-flex">
+        <img src="me.jpg" alt="Mehedi Hasan Nahid" class="rounded-circle">
+        <div class="ml-3">
+            <h1 class="ml-3" id="dynamic-h1">Hi I'm Mehedi Hasan <span id="dynamic-text"></span></h1>
+            <h5 class="ml-3" id="dynamic-h5">I'm a Software Developer and script writer, currently studying at Memorial University of Newfoundland, Canada.</h5>
+        </div>
+    </div>
+
+    <script>
+        // Define an array of dynamic texts and colors
+        const dynamicTexts = [
+            { text: "a Web Developer",  color: "rgb(19,31,16)"},
+            { text: "a Programmer", color: "ghostwhite" },
+            { text: "a Tech Enthusiast", color: "rgb(101,87,87)" }
+        ];
+
+        // Get the <span> and <h5> elements
+        const dynamicTextSpan = document.getElementById("dynamic-text");
+        const dynamicH5 = document.getElementById("dynamic-h5");
+        const dynamicH1 = document.getElementById("dynamic-h1");
+
+        // Set the initial text and color
+        let index = 0;
+        setDynamicText(index);
+
+        // Set the dynamic text to change every 3 seconds
+        setInterval(() => {
+            index = (index + 1) % dynamicTexts.length;
+            setDynamicText(index);
+        }, 2000);
+
+        // Helper function to set the dynamic text and color
+        function setDynamicText(index) {
+            const { text, color } = dynamicTexts[index];
+            dynamicTextSpan.textContent = text;
+            dynamicTextSpan.style.color = color;
+            dynamicH5.textContent = `I'm ${text} and script writer, currently studying at Memorial University of Newfoundland, Canada.`;
+            dynamicH5.style.color = color;
+            dynamicH1.textContent = `Hi I'm Mehedi Hasan, ${text}`;
+            dynamicH1.style.color = color;
+        }
+    </script>
+</body>
+
+
+
     <style>
         .contact-section {
         background-color: #f2f2f2;
@@ -141,6 +179,8 @@
         
           
     </script>
+
+
     <div Style="text-align:center;" id="footer">&copy;
         Mehedi Hasan Nahid 2023-2024. All Rights Reserved.
     </div>
