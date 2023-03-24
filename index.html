@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
         <style>
             .header {
-            background-color: ghostwhite;
+            background-color: rgb(248, 248, 252);
             padding: 20px;
             }
             .header a {
@@ -29,7 +29,7 @@
     <body>
         <hr size = "11" noshade>
         <div class="header d-flex justify-content-between">
-            <h3 class="font-weight-bold">MEHEDI HASAN NAHID</h3>
+            <h3 class="font-weight-bold"><a href="index.html">MEHEDI HASAN NAHID</a></h3>
             <div>
                 <a class="btn btn-outline-light mr-3" href="projects.html">PROJECTS</a>
                 <a class="btn btn-outline-light mr-3" href="education.html">EDUCATION</a>
@@ -41,7 +41,7 @@
             .top-panel {
             width: 100%;
             height: 500px;
-            background-color: rgb(140, 160, 146);
+            background-color: rgba(152, 150, 170, 0.93);
             align-items: center;
             padding: 20px;
             }
@@ -59,7 +59,7 @@
 
 <body>
     <div class="top-panel d-flex">
-        <img src="me.jpg" alt="Mehedi Hasan Nahid" class="rounded-circle">
+        <img src="m2.JPG" alt="Mehedi Hasan Nahid" class="rounded-circle">
         <div class="ml-3">
             <h1 class="ml-3" id="dynamic-h1">Hi I'm Mehedi Hasan <span id="dynamic-text"></span></h1>
             <h5 class="ml-3" id="dynamic-h5">I'm a Software Developer and script writer, currently studying at Memorial University of Newfoundland, Canada.</h5>
@@ -83,7 +83,7 @@
         let index = 0;
         setDynamicText(index);
 
-        // Set the dynamic text to change every 3 seconds
+        // Set the dynamic text to change every 2 seconds
         setInterval(() => {
             index = (index + 1) % dynamicTexts.length;
             setDynamicText(index);
@@ -102,6 +102,54 @@
     </script>
 </body>
 
+<style>
+    .activities{
+        width: 100%;
+
+            
+    }
+</style>
+
+<div id="section-3" class="section tile bg-light p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2 d-flex justify-content-center align-items-center">
+            <a href="https://github.com/nahid-hasan-mehedi">
+                <img src="assets/codeImg.jpeg" class="img-fluid rounded" alt="Projects Image">
+              </a>
+              
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h6 class="text-uppercase font-weight-bold mb-3" style="color: rgb(204, 155, 155);">Projects</h6>
+            <p class="lead" style="color: rgb(134, 152, 163);">"Through my diverse experiences in various fields, such as web development and software development, I have gained valuable knowledge and skills. Although some of my projects are not publicly available, I invite you to explore my open-source projects on GitHub by clicking the button below."</p>
+            <a class="btn btn-primary mr-3" href="projects.html">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div id="section-3" class="section tile bg-light p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 order-lg-1 d-flex justify-content-center align-items-center mb-4">
+                <a href="https://github.com/nahid-hasan-mehedi">
+                    <img src="assets/mun.jpg" class="img-fluid rounded" alt="Projects Image" style="width: 120%;">
+                </a>
+            </div>
+            <div class="col-lg-12 order-lg-2">
+                <div class="p-5 text-center">
+                    <h6 class="text-uppercase font-weight-bold mb-3" style="color: rgb(50, 43, 62);">EDUCATION</h6>
+                    <p class="lead" style="color: rgb(26, 29, 46); margin-top: -20px;">"Education is not just about acquiring degrees and certificates - it's about a lifelong pursuit of knowledge and growth. I have always been passionate about expanding my horizons and challenging myself to learn new things. From studying computer science and mathematics in college to taking online courses in various fields, I have built a solid foundation of theoretical knowledge that I constantly apply to my practical work,You can find the courses that I have completed so far here."</p>
+                    <a class="btn btn-primary mr-3" href="education.html">Visit Courses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <style>
@@ -113,7 +161,7 @@
         max-width: 800px;
         margin: 0 auto;
         padding: 2rem;
-        background-color: blanchedalmond;
+        background-color: rgb(190, 146, 137);
         border-radius: 5px;
         }
         .form-control {
